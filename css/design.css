@@ -96,20 +96,27 @@ nav li:last-child {
     border-right: none;
 }
 
-/* ul:hover > li {
-    border-right: none;
-}
-
-ul:hover > li:hover {
-    border-bottom: 1px solid #383838;
-} */
-
-/* un-comment for higher screen sizes */
-
 nav a {
     text-decoration: inherit;
     color: inherit;
     display: block;
+}
+
+footer {
+    border-top: 1px solid #383838;
+    margin: 2em 4em;
+    padding: 0.8em 0.2em;
+    font-size: 1rem;
+}
+
+footer li {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+}
+
+footer a {
+    text-decoration: inherit;
+    color: inherit;
 }
 
 h1, h2, h3 {
@@ -122,7 +129,7 @@ p, li, label {
     font-weight: 300;
 }
 
-input[type="text"], input[type="email"], input[type="textarea"] {
+input[type="text"], input[type="email"], textarea {
     font-family: 'Noto Sans JP', sans-serif;
     font-weight: 300;
 }
@@ -132,12 +139,11 @@ button {
     font-weight: 300;
     background-color: #383838;
     color: #fafcfb;
-    border-radius: 0.5em;
+    border-radius: 0.3em;
     border: none;
-    max-width: fit-content;
 }
 
-@media (min-width: 320px) {
+@media (min-width: 320px) and (max-width: 719px){
 
     nav li {
         font-size: 1rem;
@@ -169,7 +175,64 @@ button {
         font-size: 1.5rem;
     }
 
-    form {
-        font-size: 1.5rem;
+    footer li {
+        font-size: 1em;
+    }
+}
+
+@media (min-width: 360px) {
+
+    nav li {
+        font-size: 1.2rem;
+    }
+
+    nav a {
+        text-align: center;
+        display: block;
+    }
+}
+
+@media (min-width: 720px) {
+
+    nav ul:hover > li {
+        border-right: none;
+    }
+    
+    nav ul:hover > li:hover {
+        border-bottom: 1px solid #383838;
+    }
+
+    nav li {
+        font-size: 3rem;
+        justify-content: space-evenly;
+    }
+
+    nav a {
+        text-align: center;
+        display: block;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    h2 {
+        font-size: 3.5rem;
+    }
+
+    h3 {
+        font-size: 3rem;
+    }
+
+    p, li, label, input[type="text"], input[type="email"], input[type="textarea"], button {
+        font-size: 1.8rem;
+    }
+
+    footer li {
+        font-size: 1rem;
+    }
+
+    footer {
+        max-width: 15%;
     }
 }
