@@ -27,19 +27,25 @@
             </ul>
         </nav>
     </header>
+    <h1>Contact</h1>
     <form action="/send">
-        <h1>Contact</h1>
         <div>
             <label for="firstname">First Name </label>
-            <input type="text" name="firstname" id="firstname" placeholder="" required>
+            <p>
+                <input type="text" name="firstname" id="firstname" placeholder="" required>
+            </p>
             <label for="lastname">Last Name </label>
-            <input type="text" name="firstname" id="firstname" placeholder="" required>
+            <p>
+                <input type="text" name="firstname" id="firstname" placeholder="" required>
+            </p>
             <label for="email">Email </label>
-            <input type="email" name="email" id="email" placeholder="">
+            <p>
+                <input type="email" name="email" id="email" placeholder="" required>
+            </p>
         </div>
         <div>
             <label for="form">Hello!</label>
-            <textarea name="form" id="form" cols="150" rows="20" maxlength="1000" wrap="hard"
+            <textarea name="form" id="form" cols="150" rows="10" maxlength="1000" wrap="hard"
                 placeholder="max 1000 characters" required></textarea>
         </div>
         <button>Submit</button>
@@ -48,9 +54,8 @@
     <footer>
         <ul>
             <li>&copy; Michael Rothe</li>
-            <li>mikerothe@gmail.com</li>
-            <li>Style Guide</li>
-            <li>Github</li>
+            <li><a href="">Style Guide</a></li>
+            <li><a href="">Github</a></li>
         </ul>
     </footer>
 </body>
